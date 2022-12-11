@@ -1,0 +1,14 @@
+div.body aside.nav,
+.nav-menu a,
+.nav-menu span,
+div.body aside.nav .nav-panel-explore {
+  color: var(--color-isis-green);
+}
+
+div.body aside.nav {
+  background-color: var(--color-smoke-30);
+}
+
+div.tocify-extend-page {
+  background-color: var(--color-smoke-30);
+}

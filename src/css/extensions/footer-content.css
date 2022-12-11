@@ -1,0 +1,11 @@
+footer .content .copyright {
+  float: left;
+}
+
+footer .content .revision {
+  float: right;
+}
+
+footer {
+  min-height: 100px;
+}

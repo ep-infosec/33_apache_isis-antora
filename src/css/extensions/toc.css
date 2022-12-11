@@ -1,0 +1,93 @@
+
+@media screen and (min-width: 1025px) {
+  .article-aside {
+    display: block;
+    position: fixed;
+    top: 130px;
+    right: 0;
+    font-size: 0.9em;
+    border-left: dotted 1px #e1e1e1;
+    width: 16rem;
+    margin-right: 2rem;
+  }
+
+  #article-toc {
+    padding-left: 0;
+    margin-right: 2rem;
+  }
+
+  .article-aside.hidden {
+    display: none;
+  }
+
+  .doc {
+    float: left;
+    width: calc(100% - 22rem);
+  }
+}
+
+.tocify {
+  position: fixed;
+}
+
+.tocify ul,
+.tocify li {
+  background: transparent;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 30px;
+}
+
+li.tocify-item.ui-state-default > a {
+  font-weight: bolder;
+}
+
+.tocify-subheader {
+  padding-left: 10px;
+}
+
+.tocify-subheader .tocify-subheader {
+  padding-left: 20px;
+  display: none;
+}
+
+.tocify-subheader .tocify-subheader .tocify-subheader {
+  padding-left: 30px;
+  display: none;
+}
+
+.-narrow aside.toc,
+.-toc aside.toc {
+  display: none;
+}
+
+@media screen and (min-width: 1025px) {
+  .-narrow .doc {
+    width: 95%;
+  }
+}
+
+.-narrow .doc {
+  max-width: 95%;
+}
+
+aside.toc #article-toc {
+  padding-left: 20px;
+  color: var(--color-isis-blue);
+  border: var(--color-isis-blue) dashed;
+  border-width: 0 0 0 0.1rem;
+  -o-border-image: linear-gradient(var(--color-isis-green), var(--color-isis-green)) 0 0 0 100%;
+  border-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-isis-green))), to(var(--color-isis-green)) 0 0 0 100%;
+  border-image: linear-gradient(var(--color-isis-green), var(--color-isis-green)) 0 0 0 100%;
+  margin-bottom: 1.5rem;
+}
+
+.toc-title {
+  color: var(--color-isis-green);
+}
+
+aside.toc ul.tocify-subheader {
+  margin-left: 20px;
+}
